@@ -5,7 +5,6 @@ from ubidots import ApiClient
 
 api = ApiClient(token='joyennRrfYPeTJyI6K7mHrqvImIaZ5')
 ser = serial.Serial("/dev/ttyACM0",baudrate=9600,timeout=2.0);
-# ser.baudrate = 9600;
 
 RPi_pinled = 11;
 
@@ -32,8 +31,8 @@ while True:
             print "apagado led arduino"
             ser.write('B')
 	ser.reset_input_buffer();
-	ser.write('C') #lee valor analogo
+	ser.write('C')
 	sen = ser.readline();
 	ubi_pot.save_value({'value': int(sen)});
-	print ("lectura A0: "+ sen)
+	print ("lectura arduino pin A0: "+ sen)
 	print "loop..."
