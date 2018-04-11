@@ -3,14 +3,14 @@ import RPi.GPIO as GPIO
 import time
 from ubidots import ApiClient
 
-api = ApiClient(token='joyennRrfYPeTJyI6K7mHrqvImIaZ5')
+api = ApiClient(token='<su token de cuenta Ubidots>')
 ser = serial.Serial("/dev/ttyACM0",baudrate=9600,timeout=2.0);
 
 RPi_pinled = 11;
 
-ubi_pot = api.get_variable('5acce151c03f975dcd40acdb')
-ubi_led_rpi = api.get_variable('5acce2d8c03f975f651c8b1a')
-ubi_led_ard = api.get_variable('5acce2e3c03f975f651c8b1d')
+ubi_pot = api.get_variable('<ID de su variable para el potenciomentro>')
+ubi_led_rpi = api.get_variable('<ID de su variable para el led de raspberry>')
+ubi_led_ard = api.get_variable('<ID de su variable para el led arduino>')
 
 GPIO.setmode(GPIO.BOARD);
 GPIO.setup(RPi_pinled,GPIO.OUT);
