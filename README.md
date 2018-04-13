@@ -7,6 +7,7 @@ El control y supervisión de estos dispositivos se realiza mediante un servicio 
 
 ## Instrucciones
 1. Descargar el proyecto [Aqui](https://github.com/academiasIT/Arduino_Raspberry_IoT/) presionado el botón verde llamado "Clone or download" y seleccionado "Download as Zip", como se muestra a continuación:
+
  ![](assets/markdown-img-paste-20180413102021683.png)
 
  O también clonando el proyecto utilizando Git: `git clone https://github.com/academiasIT/Arduino_Raspberry_IoT.git`.
@@ -16,7 +17,7 @@ El control y supervisión de estos dispositivos se realiza mediante un servicio 
 
 3. Luego conectar el Arduino mediante un cable USB al computador en donde se descargo el proyecto. Abrir el IDE de Arduino y cargar el archivo llamado tallerTalca.ino existente en el proyecto comose muestra en la figura.
 
-  ![](assets/markdown-img-paste-20180413112915296.png)
+      ![](assets/markdown-img-paste-20180413112915296.png)
 
  Configurar el IDE de Arduino con la tarjeta correcta (Herramientas->Tarjeta->Arduino uno) y el puerto de comunicaciones correspondiente en cada caso particular (Herramientas->Puerto->COM*X*), finalmente pinchar el boton "subir" ![](assets/markdown-img-paste-20180413111227952.png) del IDE para grabar el programa en el Arduino.
 
